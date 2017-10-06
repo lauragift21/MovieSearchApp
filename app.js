@@ -8,7 +8,7 @@ var request = require("request");
 app.set("view engine", "ejs");
 
 app.get('/', function(req, res){
-    res.render('search');
+    res.render("search");
 })
 
 app.get('/results', function(req, res){
