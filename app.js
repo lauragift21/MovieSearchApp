@@ -4,12 +4,12 @@ var app = express()
 
 var request = require("request");
 
-// tells express that the default template enginge is ejs
+// tells express that the default template engine is ejs
 app.set("view engine", "ejs");
 
 app.get('/', function(req, res){
     res.render("search");
-})
+});
 
 app.get('/results', function(req, res){
     var query = req.query.search;
@@ -25,5 +25,5 @@ app.get('/results', function(req, res){
 
 app.listen(3000, function () {
   console.log('Server started at port 3000')
-})
+});
 
